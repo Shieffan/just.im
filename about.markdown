@@ -23,4 +23,4 @@ Copyright or copyleft ?
 > + While quoting or linking any material from this site, you must give the link to the original article.
 > + Without my permission, you cannot use the content for any commercial purpose.
 
-![Little Cat]({{ site.IMG_PATH }}/2014/05/duoduo.jpg-m)
+![Little Cat]({{ site.IMG_PATH }}/2014/05/duoduo.jpg!m)
