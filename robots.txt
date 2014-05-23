@@ -1,2 +1,26 @@
+User-agent: Baiduspider
+Disallow: /static
+User-agent: Sosospider
+Disallow: /static
+User-agent: sogou spider
+Disallow: /static
+User-agent: YodaoBot
+Disallow: /static
+User-agent: Googlebot
+Disallow: /static
+User-agent: Bingbot
+Disallow: /static
+User-agent: Slurp
+Disallow: /static
+User-agent: MSNBot
+Disallow: /static
+User-agent: googlebot-image
+Disallow: /static
+User-agent: googlebot-mobile
+Disallow: /static
+User-agent: yahoo-blogs/staticv3.9
+Disallow: /static
+User-agent: psbot
+Disallow: /static
 User-agent: *
 Disallow: /static
