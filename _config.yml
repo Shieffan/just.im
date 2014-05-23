@@ -1,0 +1,33 @@
+name: Just's words
+permalink: /:categories/:year/:month/:day/:title.html
+description: 记录Just_的技术点滴，关注Linux、Web开发、网络安全以及其它IT新技术。希望能给所有看到的人提供帮助。
+author: Just_
+email: shieffan@gmail.com
+url: "http://just.im"
+duoshuo: "shieffan"
+ASSETS_PATH: 'http://static.just.im'
+IMG_PATH: "http://image.just.im"
+
+markdown: kramdown
+kramdown:
+      input: GFM
+
+navigations:
+  - title: Archive
+    class: icon-list-bullet
+    href: /archive.html
+  - title: My Readings
+    class: icon-bookmark-empty
+    href: /readings.html
+  - title: Tags
+    class: icon-tags
+    href: /tags.html
+  - title: About
+    class: icon-user
+    href: /about.html
+  - title: Subscribe
+    class: icon-rss
+    href: /atom.xml
+  - title: Search
+    class: icon-search
+    href: /search.html

@@ -1,0 +1,62 @@
+---
+layout: default
+---
+
+<article>
+  <header>
+    <h1 class="title">{{ page.title }} </h1>
+    <div class="meta clearfix">
+        <div class="published">
+            <span class="caption">Posted:</span>
+            <span class="publishdate"><time datetime="{{ page.date | date:'%Y-%m-%d' }}">{{ page.date | date:'%B %d, %Y' }}</time></span>
+        </div>
+        {% if page.tags %}
+        <div class="tags">
+            <span class="caption">Tags:</span>
+            {% for tag in page.tags %}
+            <a href="/tags.html#{{ tag }}" title="{{ tag }}">#{{ tag }}</a>
+            {% endfor %}
+        </div>
+        {% endif %}
+  </div>
+  </header>
+  <div class="entry-content">
+  {{ content }}
+  </div>
+  <footer>
+  <div class="copyright">
+      <p class="warn"><i class="fa icon-attention"></i>您可以引用本文章节，但未经本人允许禁止复制转载超过50%的内容，引用本文内容请附上本文链接。<span id="print-span"><a href="#">保存本文为PDF。</a></span></p>
+      <p class="print"><i class="fa icon-right-hand"></i> 您可访问 <a href="{{ site.url }}">{{ site.url }}</a> 搜索本文，获取本文更新或参与讨论。</p>
+  </div>
+  {% if page.guid %}
+  <div class="divider">
+    <span>
+    {% if page.previous %}
+    <a href="{{ page.previous.url }}">Previous</a>
+    {% endif %}
+    {% if page.next %}
+    <a href="{{ page.next.url }}">Next</a>
+    {% endif %}
+    </span>
+  </div>
+  </footer>
+</article>
+  <div id="comment">
+    <!-- 多说评论框 start -->
+    <div class="ds-thread" data-thread-key="{{ page.guid }}" data-title="{{ page.title }}" data-url="{{ site.url | append:page.url }}"></div>
+    <!-- 多说评论框 end -->
+    <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+    <script type="text/javascript">
+    var duoshuoQuery = {short_name:"{{ site.duoshuo }}"};
+    (function() {
+        var ds = document.createElement('script');
+        ds.type = 'text/javascript';ds.async = true;
+        ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+        ds.charset = 'UTF-8';
+        (document.getElementsByTagName('head')[0] 
+         || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+    </script>
+    <!-- 多说公共JS代码 end -->
+  </div>
+  {% endif %}
